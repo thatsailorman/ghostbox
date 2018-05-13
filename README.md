@@ -14,12 +14,11 @@ So in short: [G]hostbox is a self hosted file sharing tool which turns your devi
 
 ![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-1.JPG?raw=true)
 
-* * The log in screen... * *
+* * The log in screen...
 
 ![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-3.JPG?raw=true)
-![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-4.JPG?raw=true)
 
-* * Browsing the shared files folder... * *
+* * Browsing the shared files folder...
 
 
 ## Downloads ##
