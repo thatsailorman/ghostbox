@@ -8,7 +8,7 @@ A portable windows tool to launch your own (basic) self-hosted dropbox clone on 
 
 ## How does [G]hostbox work? ##
 By simply clicking startserver.exe, [G]hostbox will startup it's own PHP server with CMS, start TOR, create (or load a previous made) an .onion adress.
-All the files in the 'Shared' folder can now be browsed and downloaded from inside the browser by simply visiting your own .onion adress (and login with your password) from any where around the world (either on your phone, tablet, laptop or any other device that supports browsing the web).  
+All the files in the 'shares' folder can now be browsed and downloaded from inside the browser by simply visiting your own .onion adress (and login with your password) from anywhere around the world (either on your phone, tablet, laptop or any other device that supports browsing the web).  
 
 So in short: [G]hostbox is a self hosted file sharing tool which turns your device in to a TOR web server, making your shared files accessable from anywhere.
 
