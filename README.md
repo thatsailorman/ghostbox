@@ -12,7 +12,7 @@ All the files in the 'Shared' folder can now be browsed and downloaded from insi
 
 So in short: [G]hostbox is a self hosted file sharing tool which turns your device in to a TOR web server, making your shared files accessable from anywhere.
 
-![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-2.JPG?raw=true)
+![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-3.JPG?raw=true)
 The log in screen...
 
 ![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-3.JPG?raw=true)
