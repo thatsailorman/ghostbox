@@ -1,6 +1,10 @@
 [G]hostbox - Self hosted Dropbox Tor client (Windows tool + PHP CMS)
 
-A portable windows tool to launch your own (basic) self-hosted dropbox clone on Windows. [G]hostbox contains two executable files (Startserver.exe and stopserver.exe) and a PHP based CMS with login portal.
+A portable windows tool to launch your own (basic) self-hosted dropbox clone on Windows. [G]hostbox contains two executable files (Ghostbox-StartServer.exe and Ghostbox-StopServer.exe) and a PHP based CMS with login portal.
+
+![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-2.JPG?raw=true)
+[G]hostbox in action!....
+
 
 ## How does [G]hostbox work? ##
 By simply clicking startserver.exe, [G]hostbox will startup it's own PHP server with CMS, start TOR, create (or load a previous made) an .onion adress.
@@ -8,10 +12,19 @@ All the files in the 'Shared' folder can now be browsed and downloaded from insi
 
 So in short: [G]hostbox is a self hosted file sharing tool which turns your device in to a TOR web server, making your shared files accessable from anywhere.
 
+![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-2.JPG?raw=true)
+The log in screen...
+
+![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-3.JPG?raw=true)
+![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/ghostbox-cms-4.JPG?raw=true)
+Browsing the shared files folder...
+
 
 ## Downloads ##
-Binary (plug and play):
-Binary (+ source code):
+Binary (plug and play): https://github.com/thatsailorman/ghostbox/blob/master/Downloads/Ghostbox-exe.zip
+
+Binary (+ source code): https://github.com/thatsailorman/ghostbox/blob/master/Downloads/Ghostbox-exe-with-sourcecode.zip
+
 
 
 ## Features ##
@@ -25,6 +38,13 @@ Binary (+ source code):
 ### First boot? ###
 Upon first launch (simply click on Ghostbox-StartServer.exe), [G]hostbox will download a portable php version (one-time only) from a static http url and copies the portable PHP files to the right folder inside the [G]hostbox folder. After the first boot (when PHP is downloaded inside the [G]hostbox folder) the tool will start a PHP server, launch TOR and create an .onion adress for you. Fully automated.
 
+![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/install2-ghostbox.JPG)
+On first launch, QuickPHP will be downloaded (one time only). Now re-start Ghostbox-StartServer.exe to start your server....
+
+
+![alt text](https://github.com/thatsailorman/ghostbox/blob/master/Screenshots/install3-ghostbox.JPG)
+The second launch: your .onion domain has been created and saved. Your server should now be up and running. Access your files from anywhere using the TOR network...
+
 
 
 ### 100% Portable ###
@@ -37,10 +57,12 @@ You can find the www folder here: Server -> www --> shares.
 ### My browser won't open the .onion domain ###
 Most common errors:
 
-**Number one:** You'll need a TOR browser to visit .onion websites!
+**Number one:** 
+You'll need a TOR browser to visit .onion websites!
 It's available for Windows, Linux, Mac, iOS and Android.
 
-**Number two:** the file startserversilent.exe gets blocked by windows.
+**Number two:**
+The file startserversilent.exe gets blocked by windows.
 The exe simply loads QuickPHP silently in the background. Some Antivirus tools or the Windows Firewall might find this suspicious and thus it gets blocked.
 In case it gets blocked: First launch Ghostbox-StartServer.exe, wait a couple of seconds and then go to the folder 'Server' and start QuickPHP.exe manually.
 
@@ -51,13 +73,16 @@ Browse to your downloaded Ghostbox folder.
 Then go to the folder: Server\www\resources, and open the file config.php.
 
 - Exclude files, folders and filetypes
+
 In the config file you can exclude custom files or filetypes (that won't show up in the file browser inside your internet browser). You could exclude for example *.php files from being listed etc.
 You can exclude filetypes or exact matching filenames.
 
 - Changing site title, description etc.
+
 In the same 'resources' folder, open the file: site-settings.php (and edit the values).
 
 - Changing the password?
+
 Visit http://www.sha1-online.com/ and create a SHA1 password HASH. Copy that HASH.
 
 In the 'www' folder you will find index.php.
@@ -68,6 +93,7 @@ Example:  $password = 'c38cb759afd8e0f226d91bfcf3763aa354682b92';
 The default password is: **iamghost**
 
 - CSS?
+
 The original CSS theming is made by https://www.creative-tim.com.
 They offer free and premium bootstrap themes! Their work is awesome! Check it out.
 
@@ -77,8 +103,10 @@ They offer free and premium bootstrap themes! Their work is awesome! Check it ou
 How to edit?
 
 - Download [G]hostbox
+
 Step one:
-Download the [G]hostbox release here:
+Download the [G]hostbox release here: https://github.com/thatsailorman/ghostbox/blob/master/Downloads/Ghostbox-exe-with-sourcecode.zip
+
 Unzip the archive
 
 Step two:
@@ -89,9 +117,11 @@ Once again, keep the same folder structure and filenames or else [G]hostbox won'
 
 
 - You'll need a BAT to EXE converter.
+
 Download here: http://download.cnet.com/Bat-To-Exe-Converter-Portable/3000-2069_4-10555897.html
 
 - Any text editor (such as Windows Notepad)
+
 To edit the batch (.bat) files and the PHP files
 
 The exe files are simply batch files that launch some binaries (they are bundled with the [G]hostbox download) such as TOR, Curl and the PHP server (and make sure they don't save data outside the original [G]hostbox folder).
@@ -100,19 +130,32 @@ Batch files can be edited with any text editor, even the standard Windows softwa
 
 ### Third party binaries ###
 [G]hostbox is made possible thanks to:
+
 TOR
+
 Curl
+
 QuickPHP
 
+
 For the user interface:
+
 NirCMD - http://www.nirsoft.net/utils/nircmd.html
+
 Wbusy
+
 Messagebox
+
 Unzip
 
+
 For the PHP back and frontend:
+
 PHPcrypt - https://github.com/gilfether/phpcrypt
+
 PHP Directory Lister - https://www.directorylister.com/
+
+
 
 Have fun with your own personal self hosted dark web Dropbox clone!
 Got questions? Hit me up.
