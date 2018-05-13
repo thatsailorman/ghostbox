@@ -1,0 +1,1 @@
+QuickPHP.exe /minimized /port=82 /Start
