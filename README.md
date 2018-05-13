@@ -2,19 +2,19 @@
 
 A portable windows tool to launch your own (basic) self-hosted dropbox clone on Windows. [G]hostbox contains two executable files (Startserver.exe and stopserver.exe) and a PHP based CMS with login portal.
 
-##How does [G]hostbox work?##
+## How does [G]hostbox work? ##
 By simply clicking startserver.exe, [G]hostbox will startup it's own PHP server with CMS, start TOR, create (or load a previous made) an .onion adress.
 All the files in the 'Shared' folder can now be browsed and downloaded from inside the browser by simply visiting your own .onion adress (and login with your password) from any where around the world (either on your phone, tablet, laptop or any other device that supports browsing the web).  
 
 So in short: [G]hostbox is a self hosted file sharing tool which turns your device in to a TOR web server, making your shared files accessable from anywhere.
 
 
-##Downloads##
+## Downloads ##
 Binary (plug and play):
 Binary (+ source code):
 
 
-##Features##
+## Features ##
 - Fully automated & Plug and Play (downloading portable PHP, creating an .onion adress)
 - Easy as Pie! (Click Ghostbox-StartServer.exe to start and Ghostbox-StopServer.exe to stop the server)
 - Log in portal (Make your [G]hostbox private)
@@ -22,19 +22,19 @@ Binary (+ source code):
 - Encrypted shoutbox (Form to publish message to the encrypted shoutbox. It simply writes a new line to a .txt file and re-encrypts the txt file so it will only be readable once logged in on the web portal)
 
 
-###First boot?###
+### First boot? ###
 Upon first launch (simply click on Ghostbox-StartServer.exe), [G]hostbox will download a portable php version (one-time only) from a static http url and copies the portable PHP files to the right folder inside the [G]hostbox folder. After the first boot (when PHP is downloaded inside the [G]hostbox folder) the tool will start a PHP server, launch TOR and create an .onion adress for you. Fully automated.
 
 
 
-###100% Portable###
+### 100% Portable ###
 No files are saved on local PC windows folders (such as %APPDATA%). All files remain inside the [G]hostbox folder itself. That means you can simply save everything on an USB thumb drive and take (and boot it up) as you're on the road. However, you could also keep it running 24/7 from home (and access your files anytime you'll need them where ever you are).
 
-###Where to place the files I want to share?###
+### Where to place the files I want to share? ###
 You decide which files you want to share. Copy and paste those files inside the 'shares' folder.
 You can find the www folder here: Server -> www --> shares.
 
-###My browser won't open the .onion domain###
+### My browser won't open the .onion domain ###
 Most common errors:
 
 **Number one:** You'll need a TOR browser to visit .onion websites!
@@ -46,7 +46,7 @@ In case it gets blocked: First launch Ghostbox-StartServer.exe, wait a couple of
 
 
 
-###Configuration###
+### Configuration ###
 Browse to your downloaded Ghostbox folder.
 Then go to the folder: Server\www\resources, and open the file config.php.
 
@@ -65,13 +65,15 @@ On line 7 you'll see: $password = '';
 Paste the SHA1 HASH between the ''. 
 Example:  $password = 'c38cb759afd8e0f226d91bfcf3763aa354682b92';
 
+The default password is: **iamghost**
+
 - CSS?
 The original CSS theming is made by https://www.creative-tim.com.
 They offer free and premium bootstrap themes! Their work is awesome! Check it out.
 
 
 
-###Editing the source code###
+### Editing the source code ###
 How to edit?
 
 - Download [G]hostbox
@@ -80,7 +82,7 @@ Download the [G]hostbox release here:
 Unzip the archive
 
 Step two:
-Download the batch files from this Github page or copy them from the SourceCode folder, inside the ZIP archive.
+Download the batch files from this Github page or copy them from the Sourcecode folder, inside the ZIP archive.
 Place the batch files to the exact same location as the .exe files.
 Make changes to the .bat files and re-compile them to .exe files.
 Once again, keep the same folder structure and filenames or else [G]hostbox won't be able to find and launch the files.
@@ -96,7 +98,7 @@ The exe files are simply batch files that launch some binaries (they are bundled
 Batch files can be edited with any text editor, even the standard Windows software: Notepad. Make any changes you'll need and re-compile the BAT file back to EXE with the BAT2EXE converter.
 
 
-###Third party binaries###
+### Third party binaries ###
 [G]hostbox is made possible thanks to:
 TOR
 Curl
@@ -106,6 +108,7 @@ For the user interface:
 NirCMD - http://www.nirsoft.net/utils/nircmd.html
 Wbusy
 Messagebox
+Unzip
 
 For the PHP back and frontend:
 PHPcrypt - https://github.com/gilfether/phpcrypt
