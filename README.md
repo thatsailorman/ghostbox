@@ -156,6 +156,21 @@ PHPcrypt - https://github.com/gilfether/phpcrypt
 
 PHP Directory Lister - https://www.directorylister.com/
 
+### Security ###
+I don't plan on updating [G]hostbox in the future, however I must note (in current state) the php script uses SHA1 for the log in password... You might want to update that for security reasons. SHA1 isn't the most bullet proof password encryption method.
+
+Second: Running a public web server (even on the TOR network) from your own local PC is always a security risk. If you plan on running it 24/7 for safety reasons it would be better to run it atleast inside a virtual machine.
+
+Use at your own risk.
+
+
+
+
+### License: ###
+MIT, do whatever the Fck you want with it. ;)
+
+Note: [G]hostbox uses third party binaries. Be sure to check their license files too.
+
 
 
 Have fun with your own personal self hosted dark web Dropbox clone!
